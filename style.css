@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+li {
+    text-decoration: none;
+
+}
+
+#main{
+    position: relative;
+    overflow: hidden;
+}
+
+/*======================================= Home Section =============================================*/
+
+#home {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./images/home2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.navDiv {
+    padding: 2vw 5vw;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 20px;
+    transition: 1 ease-in-out;
+}
+
+.logo:hover {
+    font-weight: 500;
+}
+
+.navDiv ul li {
+    list-style: none;
+    display: inline;
+}
+
+.navDiv ul li a {
+    font-weight: 300;
+    margin-left: 24px;
+    transition: 1 ease-in-out;
+}
+
+.navDiv ul li a:hover {
+    font-weight: 400;   
+}
+
+.content {
+    height: auto;
+    width: 100%;
+    padding: 15vw 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-content-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.left-content-top i {
+    font-size: 30px;
+}
+
+.left-content-top p {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.left-content-bottom {
+    font-size: 40px;
+}
+
+.right-content {
+    font-size: 40px;
+    line-height: 1.2;
+    text-align: right;
+}
+
+.end-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5vw;
+}
+
+#left-end-time {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.right-end-location {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/*======================================= About Section =============================================*/
+
+.about {
+    position: relative;
+    background-color: white;
+    padding: 8vw 5vw;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.about-left-content {
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    border-radius: 50%;
+    align-content: center;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.about-right-content p {
+    height: auto;
+    width: 70vw;
+    font-size: 32px;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 1.8;
+    color: #9d9d9d;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding-top: 3vw;
+    gap: 5vw;
+}
+
+.projects p, .clients p{
+    height: 80px;
+    width: 80px;
+    background-color: black;
+    border-radius: 50%;
+    align-content: center;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+.projects div, .clients div {
+    text-align: center;
+    padding-top: 8px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.project-button p:hover, .client-button p:hover {
+    background-color: #10439F;
+    font-weight: 400;
+}
+
+/*======================================= Intro Section =============================================*/
+
+#intro {
+    position: relative;
+    padding: 0vw 5vw;
+    height: 65vw;
+    width: 100%;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: start;
+    justify-content: center;
+}
+
+.intro-title {
+    font-size: 500px;
+    text-align: center;
+    font-weight: 300;
+    line-height: 1;
+    z-index: -1;
+}
+
+.intro-video {
+    transform: translateY(-45%);
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    border-radius: 32px;
+    overflow: hidden;
+}
+
+/*======================================= Work Section =============================================*/
+.work {
+    padding: 2vw 5vw;
+    position: relative;
+}
+
+.work-title {
+    margin-bottom: 2vw;
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    border-radius: 50%;
+    align-content: center;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.video-frame-1 {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    margin-bottom: 2vw;
+}
+
+.video-frame-2 {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+
+.video-frame-1 video , .video-frame-2 video{
+    height: auto;
+    width: 450px;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+/*======================================= Testimonials Section =============================================*/
+
+
+.testimonials {
+    padding: 8vw 5vw;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.testimonial-title {
+    text-align: center;
+    font-size: 24px;
+    font-size: 300;
+    margin-bottom: 3vw;
+    text-decoration: underline ;
+}
+
+.testimonial-items {
+    background-color: black;
+    padding: 2vw;
+    border-radius: 32px;
+}
+
+.testimonial-items .info{
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-items img {
+    max-width: 60px;
+    border-radius: 50%;
+    margin-right: 1vw;
+    vertical-align: middle;
+    border: 1px solid #000;
+}
+
+.testimonial-items .name {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.testimonial-items p {
+    margin-top: 1vw;
+    color: #fff;
+    text-align: justify;
+}
+
+/*======================================= Contact Section =============================================*/
+
+.contact {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 2vw 5vw;
+    margin-bottom: 2vw;
+}
+
+.contact-title {
+    font-size: 40px;
+    font-weight: 300;
+    padding-bottom: 1vw;
+}
+
+.contact-details {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.socials {
+    height: auto;
+    width: 70%;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    align-content: start;
+    justify-content: space-between;
+    padding: 2vw 0;
+}
+
+.social-links {
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.social-icons a i {
+    font-size: 32px;
+}
+
+.social-icons a:hover, .social-icons a i:hover {
+    transition: 0.3s ease;
+    transform: scale(1.05);
+}
+
+.socials hr {
+    border: 1px solid #000;
+}
+
+.contact-right-content {
+    font-size: 40px;
+    font-weight: 300;
+    text-align: end;
+}
+/*======================================= Contact Section =============================================*/
+
+#footer {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.footer {
+    padding: 1vw 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+}
+
+.footer-start {
+    color: #fff;
+    font-weight: 300;
+}
+
+.footer-middle a {
+    padding-left: 1vw;
+    color: #fff;
+    font-weight: 300;
+}
+
+.footer-end a {
+    padding-left: 1vw;
+    color: #fff;
+    font-weight: 300;
+}
